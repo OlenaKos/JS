@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Stars</title>
+	<link rel="stylesheet" href="myjs.css" />
+	<script src="myjs.js"></script>
+  </head>
+  <body>
+	<div>
+	<form name="formC" action ="" >
+	<div class = "line">
+	<div class="label">Возраст:</div>
+	<div class="input">
+	<input name="txtAge" type= text value = "0"> лет
+	</div>
+	</div>
+	<div class="line">
+	<div class="label">Пол:</div>
+	<div class ="input">
+	<input name="sex" id="sexMan" type="radio" checked=true>Мужской
+	<input name="sex" id="sexWoman" type="radio">Женский
+	</div>
+	</div>
+	<div class="line">
+	<div class="label">Вес:</div>
+	<div class ="input">
+	<input name="txtWeight" type= text value = "0">
+	<input type="radio" name="weight" id="weightK" checked=true>В килограммах
+	<input type="radio" name="weight" id="weightP">В фунтах
+	</div>
+	</div>
+	<div class="line">
+	<div class="label">Рост:</div>
+	<div class ="input">
+	<input name="txtHeight" type= text value = "0"> лет
+	<input type="radio" name="height" id="heightS"checked=true>Сантиметров
+	<input type="radio" name="height" id="heightP" >Фунтов/дюймов
+	</div>
+	</div>
+	<div class="line">
+	<div class="label">Степень физической активности:</div>
+	<div class ="input">
+	<select name="lstActivity"> 
+	<option value="veryHigh">Все время в движении</option>
+	<option value="high">3 раза в неделю</option>
+	<option value="average">2 раза в неделю</option>
+	<option value="low">1 раза в неделю</option>
+	<option value="veryLow">Без доп активности</option>
+	</select>
+	</div>
+	</div>
+	<div class="line">
+	<div class="label">Результат в:</div>
+	<div class ="input">
+	<input type="radio" name="result" id="resCal" checked=true>ккал
+	<input type="radio" name="result" id="resJoul">килоджоулях
+	</div>
+	</div>
+	<div class="line">
+	<div class="label">Формула:</div>
+	<div class ="input">
+	<input type="radio" name="formula" id="formula1" checked=true>Миффлина-Сан Жеора
+	<input type="radio" name="formula" id="formula2">Харриса-Бенедикта
+	</div>
+	</div>
+	<div class="line">
+	<button id= "btnSubmit" onclick ="CalculateCalories(formC);" >Сколько нужно калорий в день</button>
+	</div>
+	
+	</form>
+	</div>
+
+ </body>
+</html>

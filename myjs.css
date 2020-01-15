@@ -1,0 +1,13 @@
+.label{
+display:inline-block;
+text-align: right;
+min-width: 250px;
+}
+.input{
+display:inline;
+}
+#btnSubmit
+{
+margin-left:250px;
+text-align:right;
+}
